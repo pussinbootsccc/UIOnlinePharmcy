@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  
+  <title>UPMC Pharmacy</title>
+  
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/grid.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/jquery.jqzoom.css" rel="stylesheet" type="text/css">
+  
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/html5.js"></script>
+  <script src="js/jflow.plus.js"></script>
+  <script src="js/selectBox.js"></script>
+  <!-- <script src="js/jquery.jqzoom-core.js" ></script> -->
+  <script src="js/login.js"></script>
+  
+  
+  
+  
+  
+  <script>
+    $(document).ready(function () {
+      $("#myController").jFlow({
+        controller: ".control", // must be class, use . sign
+        slideWrapper: "#jFlowSlider", // must be id, use # sign
+        slides: "#slider",  // the div where all your sliding divs are nested in
+        selectedWrapper: "jFlowSelected",  // just pure text, no sign
+        height: 300,  // this is the height for the content-slider
+        duration: 400,  // time in miliseconds to transition one slide
+        prev: ".slidprev", // must be class, use . sign
+        next: ".slidnext", // must be class, use . sign
+        auto: true
+        });
+    });
+  </script>
+  
+  <script>
+    $(document).ready(function () {
+      $("button").click(function () {
+        $(this).addClass('click')
+      });
+    });
+  </script>
+
+</head>
+
+
+  <body>
+
+    <!-- header area -->
+<div class="container_12">
+    <div id="top relative_container">
+        <div class="grid_3">
+            <div class="phone_top">
+                Call Us 412-647-UPMC
+            </div>
+            <!-- .phone_top -->
+        </div>
+        <!-- .grid_3 -->
+
+        <div class="grid_9 welcome">
+            <p>Welcome, guest! You can <a href="login.html">login</a> or <a href="login.html">create an account</a>.</p>
+            <p>Hello, Tom! Welcome to the UPMC online pharmacy!</p>
+        </div>
+
+    </div>
+    <!-- #top -->
+
+    <div class="clear"></div>
+
+    <header id="branding">
+        <div class="grid_3">
+            <hgroup>
+                <h1 id="site_logo"><a href="index.html" title="">
+                    <img src="images/logo.png" alt="Online Pharmacy Logo"/></a></h1>
+            </hgroup>
+        </div>
+        <!-- .grid_3 -->
+
+        <div class="account_info">
+            <div class="grid_6">
+                <ul id="cart_nav">
+                    <li>
+                        <a class="cart_li" href="shopping_cart.html"><span>Cart</span></a>
+                        <ul class="cart_cont">
+                            <li>
+                                <a href="product_page1.html" class="prev_cart">
+                                    <div class="cart_vert"><img src="images/products/product1.jpg" alt="" title=""/></div>
+                                </a>
+
+                               <div class="cont_cart">
+                                    <h4>Allegra 12 Hour Allergy, Non-Drowsy 60mg Tablets</h4>
+
+                                    <div class="price">1 x $5.99</div>
+                                </div>
+                                <a title="close" class="close" href="#"></a>
+
+                                <div class="clear"></div>
+                            </li>
+
+                            <li>
+                                <a href="product_page2.html" class="prev_cart">
+                                    <div class="cart_vert"><img src="images/products/product2.jpg" alt="" title=""/></div>
+                                </a>
+
+                                
+                                 <div class="cont_cart">
+                                    <h4>Ayr Saline Nasal Mist, 50ml</h4>
+
+                                    <div class="price">1 x $8.99</div>
+                                </div>
+                                <a title="close" class="close" href="#"></a>
+
+                                <div class="clear"></div>
+                            </li>
+                            <li class="no_border">
+                                <a href="shopping_cart.html" class="view_cart">View Shopping Cart</a>
+                                <a href="checkout.html" class="checkout">Proceed to Checkout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <nav class="private">
+                    <ul>
+                        <li><a href="404.html">My Account</a></li>
+                        <li class="separator">|</li>
+                        <li><a href="404.html">My Wishlist</a></li>
+                        <li class="separator">|</li>
+                        <li><a href="login.html">Log In</a></li>
+                        <li class="separator">|</li>
+                        <li><a href="login.html">Sign Up</a></li>
+                        <li class="separator">|</li>
+                        <li id='logout'><span>Log Out</span></li>
+                    </ul>
+                </nav>
+                <!-- .private -->
+            </div>
+        </div>
+        <!-- .grid_6 -->
+    </header>
+    <!-- #branding -->
+</div>
+<!-- .container_12 -->
+
+<div class="clear"></div>
+
+<!-- navigation bar -->
+<div id="block_nav_primary">
+    <div class="container_12">
+        <div class="grid_12 relative_container">
+            <nav class="primary">
+                <ul>
+                    <li class="curent"><a href="index.html">Shop</a></li>
+                    <li><a href="404.html">Prescription</a></li>
+                    <li><a href="404.html">MyUPMC</a></li>
+                    <li><a href="404.html">About Us</a></li>
+                    <li><a href="404.html">Help Center</a></li>
+                </ul>
+            </nav>
+
+            <div class="grid_3">
+                <form class="search" action="searchresult_grid.html">
+                  <input type="text" name="search" class="entry_form" value="" placeholder="Search here..."/>
+                  <input type="image"class="search_button" src="images/bg_search.png" />
+                </form>
+            </div>
+            <!-- .primary -->
+        </div>
+        <!-- .grid_12 -->
+    </div>
+    <!-- .container_12 -->
+</div>
+<!-- .block_nav_primary -->
+
+<div class="clear"></div>
+
+
+      <div class="clear"></div>
+
+  <section id="main" class="entire_width page-404">
+    <div class="container_12">
+       <div id="content">
+
+		<div class="grid_4 left_404">
+			<a href="#"><img src="images/products/confirm1.png" alt="" title="" /></a>
+                </div><!-- .adress -->
+
+		<div class="grid_8">
+			<p><h2>Thanks For Shopping!</h2></p>
+			<h3><font color="green">Your order has been placed!</font></h3>
+      <h3><font color="green">Order Number: 1920-3454564-4000000</font></h3>
+			
+				<a href="index.html">Go back</a> to the home page.
+				
+	
+                </div><!-- .grid_8 -->
+       </div><!-- #content -->
+
+      <div class="clear"></div>
+    </div><!-- .container_12 -->
+  </section><!-- #main -->
+
+  <div class="clear"></div>
+
+
+    <footer>
+    <div class="f_navigation">
+        <div class="container_12">
+            <div class="grid_3">
+                <h3>Contact Us</h3>
+                <ul class="f_contact">
+                    <li>200 Lothrop St. Pittsburgh, PA 15213</li>
+                    <li>412-647-UPMC</li>
+                    <li>hospital@upmc.edu</li>
+                </ul>
+                <!-- .f_contact -->
+            </div>
+            <!-- .grid_3 -->
+
+            <div class="grid_3">
+                <h3>Information</h3>
+                <nav class="f_menu">
+                    <ul>
+                        <li><a href="404.html">About Us</a></li>
+              <li><a href="404.html">Privacy Policy</a></li>
+              <li><a href="404.html">Terms & Conditions</a></li>
+              <li><a href="404.html">Secure Payment</a></li>
+            </ul>
+          </nav><!-- .private -->
+        </div><!-- .grid_3 -->
+
+        <div class="grid_3">
+          <h3>Customer Service</h3>
+          <nav class="f_menu">
+            <ul>
+              <li><a href="contact_us.html">Contact Us</a></li>
+              <li><a href="404.html">Return</a></li>
+              <li><a href="404.html">FAQ</a></li>
+              <li><a href="404.html">Site Map</a></li>
+            </ul>
+          </nav><!-- .private -->
+        </div><!-- .grid_3 -->
+
+        <div class="grid_3">
+          <h3>My Account</h3>
+          <nav class="f_menu">
+            <ul>
+              <li><a href="404.html">My Account</a></li>
+              <li><a href="404.html">Order History</a></li>
+              <li><a href="404.html">Wish List</a></li>
+              <li><a href="404.html">Newsletter</a></li>
+                    </ul>
+                </nav>
+                <!-- .private -->
+            </div>
+            <!-- .grid_3 -->
+
+            <div class="clear"></div>
+        </div>
+        <!-- .container_12 -->
+    </div>
+    <!-- .f_navigation -->
+
+    <div class="f_info">
+        <div class="container_12">
+            <div class="grid_6">
+                <p class="copyright">Copyright &copy; 2015. Simplex LLP All rights reserved.</p>
+            </div>
+            <!-- .grid_6 -->
+
+            <div class="grid_6">
+                <div class="soc">
+                    <a class="google" href="https://plus.google.com/"></a>
+                    <a class="twitter" href="https://twitter.com"></a>
+                    <a class="facebook" href="https://www.facebook.com/"></a>
+                </div>
+                <!-- .soc -->
+            </div>
+            <!-- .grid_6 -->
+
+            <div class="clear"></div>
+        </div>
+        <!-- .container_12 -->
+    </div>
+    <!-- .f_info -->
+</footer>
+
+
+  </body>
+
+</html>

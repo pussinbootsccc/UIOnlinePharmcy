@@ -1,0 +1,54 @@
+.obn,
+.like,
+.bay{
+  width: 42px;
+  display: block;
+  float: right;
+  height: 41px;
+  margin: 0px;
+  border-right: 1px solid #e0e0e0;
+}
+/*
+ *.product .cart .obn{background: url(../images/bg_obn.png) no-repeat 50% 50%;}
+ */
+.like{background: url(../images/bg_like.png) no-repeat 50% 50%;}
+.bay{
+  background: url(../images/bg_bay.png) no-repeat 50% 50% #f5f7f9;
+  border: 0 none;
+}
+a:hover.obn,
+a:hover.like,
+a:hover.bay{
+  background-color: #eff7ff;
+}
+
+/* tooltips */
+.bay span, .like span {
+  color: #111;
+  border:1px solid #DCA;
+  background:#fffAF0;
+  border-radius: 4px;
+  box-shadow: 5px 5px 8px #CCC;
+  
+  display: none;
+  position: absolute;
+  z-index: 9999;
+  padding: 8px;
+  margin-top: 45px;
+  line-height: 16px;
+}
+
+.bay span {
+  width: 121px;
+  margin-left: -50px;
+}
+
+.like span {
+  width: 93px;
+  margin-left: -40px;
+}
+
+.bay:hover span, .like:hover span {
+  display: inline;
+}
+

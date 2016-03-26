@@ -1,0 +1,767 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  
+  <title>UPMC Pharmacy</title>
+  
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/grid.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/jquery.jqzoom.css" rel="stylesheet" type="text/css">
+  
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/html5.js"></script>
+  <script src="js/jflow.plus.js"></script>
+  <script src="js/selectBox.js"></script>
+  <!-- <script src="js/jquery.jqzoom-core.js" ></script> -->
+  <script src="js/login.js"></script>
+  
+  
+  
+  <script src="js/login.js" type="text/javascript"></script>
+  
+  <script src="js/checkout.js" type="text/javascript"></script>
+  
+  
+  
+  
+  
+  <script>
+    $(document).ready(function () {
+      $("#myController").jFlow({
+        controller: ".control", // must be class, use . sign
+        slideWrapper: "#jFlowSlider", // must be id, use # sign
+        slides: "#slider",  // the div where all your sliding divs are nested in
+        selectedWrapper: "jFlowSelected",  // just pure text, no sign
+        height: 300,  // this is the height for the content-slider
+        duration: 400,  // time in miliseconds to transition one slide
+        prev: ".slidprev", // must be class, use . sign
+        next: ".slidnext", // must be class, use . sign
+        auto: true
+        });
+    });
+  </script>
+  
+  <script>
+    $(document).ready(function () {
+      $("button").click(function () {
+        $(this).addClass('click')
+      });
+    });
+  </script>
+
+</head>
+
+
+  <body>
+
+    <!-- header area -->
+<div class="container_12">
+    <div id="top relative_container">
+        <div class="grid_3">
+            <div class="phone_top">
+                Call Us 412-647-UPMC
+            </div>
+            <!-- .phone_top -->
+        </div>
+        <!-- .grid_3 -->
+
+        <div class="grid_9 welcome">
+            <p>Welcome, guest! You can <a href="login.html">login</a> or <a href="login.html">create an account</a>.</p>
+            <p>Hello, Tom! Welcome to the UPMC online pharmacy!</p>
+        </div>
+
+    </div>
+    <!-- #top -->
+
+    <div class="clear"></div>
+
+    <header id="branding">
+        <div class="grid_3">
+            <hgroup>
+                <h1 id="site_logo"><a href="index.html" title="">
+                    <img src="images/logo.png" alt="Online Pharmacy Logo"/></a></h1>
+            </hgroup>
+        </div>
+        <!-- .grid_3 -->
+
+        <div class="account_info">
+            <div class="grid_6">
+                <ul id="cart_nav">
+                    <li>
+                        <a class="cart_li" href="shopping_cart.html"><span>Cart</span></a>
+                        <ul class="cart_cont">
+                            <li>
+                                <a href="product_page1.html" class="prev_cart">
+                                    <div class="cart_vert"><img src="images/products/product1.jpg" alt="" title=""/></div>
+                                </a>
+
+                               <div class="cont_cart">
+                                    <h4>Allegra 12 Hour Allergy, Non-Drowsy 60mg Tablets</h4>
+
+                                    <div class="price">1 x $5.99</div>
+                                </div>
+                                <a title="close" class="close" href="#"></a>
+
+                                <div class="clear"></div>
+                            </li>
+
+                            <li>
+                                <a href="product_page2.html" class="prev_cart">
+                                    <div class="cart_vert"><img src="images/products/product2.jpg" alt="" title=""/></div>
+                                </a>
+
+                                
+                                 <div class="cont_cart">
+                                    <h4>Ayr Saline Nasal Mist, 50ml</h4>
+
+                                    <div class="price">1 x $8.99</div>
+                                </div>
+                                <a title="close" class="close" href="#"></a>
+
+                                <div class="clear"></div>
+                            </li>
+                            <li class="no_border">
+                                <a href="shopping_cart.html" class="view_cart">View Shopping Cart</a>
+                                <a href="checkout.html" class="checkout">Proceed to Checkout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <nav class="private">
+                    <ul>
+                        <li><a href="404.html">My Account</a></li>
+                        <li class="separator">|</li>
+                        <li><a href="404.html">My Wishlist</a></li>
+                        <li class="separator">|</li>
+                        <li><a href="login.html">Log In</a></li>
+                        <li class="separator">|</li>
+                        <li><a href="login.html">Sign Up</a></li>
+                        <li class="separator">|</li>
+                        <li id='logout'><span>Log Out</span></li>
+                    </ul>
+                </nav>
+                <!-- .private -->
+            </div>
+        </div>
+        <!-- .grid_6 -->
+    </header>
+    <!-- #branding -->
+</div>
+<!-- .container_12 -->
+
+<div class="clear"></div>
+
+<!-- navigation bar -->
+<div id="block_nav_primary">
+    <div class="container_12">
+        <div class="grid_12 relative_container">
+            <nav class="primary">
+                <ul>
+                    <li class="curent"><a href="index.html">Shop</a></li>
+                    <li><a href="404.html">Prescription</a></li>
+                    <li><a href="404.html">MyUPMC</a></li>
+                    <li><a href="404.html">About Us</a></li>
+                    <li><a href="404.html">Help Center</a></li>
+                </ul>
+            </nav>
+
+            <div class="grid_3">
+                <form class="search" action="searchresult_grid.html">
+                  <input type="text" name="search" class="entry_form" value="" placeholder="Search here..."/>
+                  <input type="image"class="search_button" src="images/bg_search.png" />
+                </form>
+            </div>
+            <!-- .primary -->
+        </div>
+        <!-- .grid_12 -->
+    </div>
+    <!-- .container_12 -->
+</div>
+<!-- .block_nav_primary -->
+
+<div class="clear"></div>
+
+
+    <div class="clear"></div>
+
+<section id="main" class="entire_width page_checkout">
+    <div class="container_12">
+        <div id="content">
+            <div class="grid_12">
+                <h1 class="page_title">Checkout</h1>
+            </div><!-- .grid_12 -->
+
+            <ul class="grid_11 checkout_list checkout_method">
+                <li class="active">
+                <div id="checkout_method" href="#" class="list_header">Checkout Method</div>
+                <div class="list_body">
+                  <form class="checkout_or" action="#">
+                      <h3>Checkout as a Guest or Register</h3>
+                      <p>Register with us for future convenience:</p>
+                      <ul class="radio">
+                          <li><input checked="checked" class="niceRadio" type="radio" name="checkout_method" value="guest"/>Checkout as Guest</li>
+                          <li><input class="niceRadio" type="radio" name="checkout_method" value="register"/>Register</li>
+                      </ul>
+                      <p><strong>Register and save time!</strong><br/>
+                      Register with us for future convenience:</p>
+                      <ul>
+                          <li>Fast and easy check out</li>
+                          <li>Easy access to your order history and status</li>
+                      </ul>
+                      <input type="submit" value="Continue" />
+                  </form>
+                  <form class="login">
+                    <h3>Login</h3>
+                    <p>If you have an account with us, please log in.</p>
+                    
+                    <div class="email">
+                        <strong>Email Adress:</strong><sup class="surely">*</sup><br/>
+                        <input type="email" name="" class="" value="" />
+                    </div><!-- .email -->
+                    
+                    <div class="password">
+                        <strong>Password:</strong><sup class="surely">*</sup><br/>
+                        <input type="PASSWORD" name="" class="" value="" />
+                    </div><!-- .password -->
+                    
+                    <div class="remember">
+                        <a class="forgot" href="#">Forgot Your Password?</a>
+                        <input class="niceCheck" type="checkbox" name="Remember_password" />
+                        <span>Remember password</span>
+                    </div><!-- .remember -->
+                    
+                    <div class="submit">
+                        <input type="submit" value="Login" />
+                        <sup class="surely">*</sup><span>Required Field</span>
+                    </div><!-- .submit -->
+                  </form>
+                <div class="clear"></div>
+              </div>
+              </li>
+            </ul>
+              
+            <div class="grid_9" id="checkout_info" style="display: none">
+                <ul class="checkout_list checkout_information">
+                    <li id="billing_address">
+                    <div href="#" class="list_header" >Billing Address<div class="number">1</div></div>
+                    <div class="list_body">
+                        <form class="myform">
+                            <div class="email">
+                                <strong>First Name:</strong><sup class="surely">*</sup><br/>
+                                <input id="first_name_billing" type="email" name="" class="" value="Tom" />
+                            </div><!-- .email -->
+                            <div class="email">
+                                <strong>Last Name:</strong><sup class="surely">*</sup><br/>
+                                <input id="last_name_billing" type="email" name="" class="" value="Hanks" />
+                            </div><!-- .email -->
+                            <div class="email">
+                                <strong>Address 1:</strong><sup class="surely">*</sup><br/>
+                                <input id="address_billing" type="email" name="" class="" value="No. 123 Somewhere Street" />
+                            </div><!-- .email -->
+                            <div class="email ">
+                                <strong>Address 2 (optional):</strong><br/>
+                                <input type="email" name="" class="optional_field" value="" />
+                            </div><!-- .email -->
+                            <div class="email">
+                                <strong>City:</strong><sup class="surely">*</sup><br/>
+                                <input id="city_billing" type="email" name="" class="" value="Pittsburgh" />
+                            </div><!-- .email -->
+                            <div class="email">
+                                <strong>State:</strong><sup class="surely">*</sup><br/>
+                                <select>
+                                    <option>AA - Armed Forces Americas</option>
+                                    <option>AE - Armed Forces Canada</option>
+                                    <option>AE - Armed Forces Europe</option>
+                                    <option>AE - Armed Forces MiddleEast</option>
+                                    <option>AK - Alaska</option>
+                                    <option>AL - Alabama</option>
+                                    <option>AP - Armed Forces Pacific</option>
+                                    <option>AR - Arkansas</option>
+                                    <option>AS - American Samoa</option>
+                                    <option>AZ - Arizona</option>
+                                    <option>CA - California</option>
+                                    <option>CO - Colorado</option>
+                                    <option>CT - Connecticut</option>
+                                    <option>DC - District of Columbia</option>
+                                    <option>DE - Delaware</option>
+                                    <option>FL - Florida</option>
+                                    <option>GA - Georgia</option>
+                                    <option>GU - Guam</option>
+                                    <option>HI - Hawaii</option>
+                                    <option>IA - Iowa</option>
+                                    <option>ID - Idaho</option>
+                                    <option>IL - Illinois</option>
+                                    <option>IN - Indiana</option>
+                                    <option>KS - Kansas</option>
+                                    <option>KY - Kentucky</option>
+                                    <option>LA - Louisiana</option>
+                                    <option>MA - Massachusetts</option>
+                                    <option>MD - Maryland</option>
+                                    <option>ME - Maine</option>
+                                    <option>MI - Michigan</option>
+                                    <option>MN - Minnesota</option>
+                                    <option>MO - Missouri</option>
+                                    <option>MP - Northern Mariana Islands</option>
+                                    <option>MS - Mississippi</option>
+                                    <option>MT - Montana</option>
+                                    <option>NC - North Carolina</option>
+                                    <option>ND - North Dakota</option>
+                                    <option>NE - Nebraska</option>
+                                    <option>NH - New Hampshire</option>
+                                    <option>NJ - New Jersey</option>
+                                    <option>NM - New Mexico</option>
+                                    <option>NV - Nevada</option>
+                                    <option>NY - New York</option>
+                                    <option>OH - Ohio</option>
+                                    <option>OK - Oklahoma</option>
+                                    <option>OR - Oregon</option>
+                                    <option>PA - Pennsylvania</option>
+                                    <option>PR - Puerto Rico</option>
+                                    <option>RI - Rhode Island</option>
+                                    <option>SC - South Carolina</option>
+                                    <option>SD - South Dakota</option>
+                                    <option>TN - Tennessee</option>
+                                    <option>TX - Texas</option>
+                                    <option>UT - Utah</option>
+                                    <option>VA - Virginia</option>
+                                    <option>VI - Virgin Islands</option>
+                                    <option>VT - Vermont</option>
+                                    <option>WA - Washington</option>
+                                    <option>WI - Wisconsin</option>
+                                    <option>WV - West Virginia</option>
+                                    <option>WY - Wyoming</option>
+                                </select>
+                            </div><!-- .email -->
+                            <div class="email">
+                                <strong>Zip Code:</strong><sup class="surely">*</sup><br/>
+                                <input id="zip_billing" type="email" name="" class="" value="15213" />
+                            </div><!-- .email -->
+                            <div class="email">
+                                <strong>Phone (xxx-xxx-xxxx):</strong><sup class="surely">*</sup><br/>
+                                <input id="phone_billing" type="email" name="" class="" value="412-666-8888" />
+                            </div><!-- .email -->
+
+                            <div class="mynext">
+                                <input type="button" value="Next"/>
+                            </div>
+                            <div class="clear"></div>
+                        </form>
+                        <div class="clear"></div>
+                    </div>
+                    </li>
+                    <li id="shipping_address">
+                    <div class="list_header">Shipping Address<div class="number">2</div></div>
+                    <div class="list_body">
+                        <form class="myform">
+                            <input id="same_address" class="niceCheck" type="checkbox"></input>
+                            <span>Same as Billing Address</span>
+                            </br></br>
+                            <div class="email">
+                                <strong>First Name:</strong><sup class="surely">*</sup><br/>
+                                <input id="first_name_shipping" type="email" name="" class="" value="" />
+                            </div><!-- .email -->
+                            <div class="email">
+                                <strong>Last Name:</strong><sup class="surely">*</sup><br/>
+                                <input id="last_name_shipping" type="email" name="" class="" value="" />
+                            </div><!-- .email -->
+                            <div class="email">
+                                <strong>Address 1:</strong><sup class="surely">*</sup><br/>
+                                <input id="address_shipping" type="email" name="" class="" value="" />
+                            </div><!-- .email -->
+                            <div class="email">
+                                <strong>Address 2 (optional):</strong><br/>
+                                <input type="email" name="" class="optional_field" value="" />
+                            </div><!-- .email -->
+                            <div class="email">
+                                <strong>City:</strong><sup class="surely">*</sup><br/>
+                                <input id="city_shipping"  type="email" name="" class="" value="" />
+                            </div><!-- .email -->
+                            <div class="email">
+                                <strong>State:</strong><sup class="surely">*</sup><br/>
+                                <select>
+                                    <option>AA - Armed Forces Americas</option>
+                                    <option>AE - Armed Forces Canada</option>
+                                    <option>AE - Armed Forces Europe</option>
+                                    <option>AE - Armed Forces MiddleEast</option>
+                                    <option>AK - Alaska</option>
+                                    <option>AL - Alabama</option>
+                                    <option>AP - Armed Forces Pacific</option>
+                                    <option>AR - Arkansas</option>
+                                    <option>AS - American Samoa</option>
+                                    <option>AZ - Arizona</option>
+                                    <option>CA - California</option>
+                                    <option>CO - Colorado</option>
+                                    <option>CT - Connecticut</option>
+                                    <option>DC - District of Columbia</option>
+                                    <option>DE - Delaware</option>
+                                    <option>FL - Florida</option>
+                                    <option>GA - Georgia</option>
+                                    <option>GU - Guam</option>
+                                    <option>HI - Hawaii</option>
+                                    <option>IA - Iowa</option>
+                                    <option>ID - Idaho</option>
+                                    <option>IL - Illinois</option>
+                                    <option>IN - Indiana</option>
+                                    <option>KS - Kansas</option>
+                                    <option>KY - Kentucky</option>
+                                    <option>LA - Louisiana</option>
+                                    <option>MA - Massachusetts</option>
+                                    <option>MD - Maryland</option>
+                                    <option>ME - Maine</option>
+                                    <option>MI - Michigan</option>
+                                    <option>MN - Minnesota</option>
+                                    <option>MO - Missouri</option>
+                                    <option>MP - Northern Mariana Islands</option>
+                                    <option>MS - Mississippi</option>
+                                    <option>MT - Montana</option>
+                                    <option>NC - North Carolina</option>
+                                    <option>ND - North Dakota</option>
+                                    <option>NE - Nebraska</option>
+                                    <option>NH - New Hampshire</option>
+                                    <option>NJ - New Jersey</option>
+                                    <option>NM - New Mexico</option>
+                                    <option>NV - Nevada</option>
+                                    <option>NY - New York</option>
+                                    <option>OH - Ohio</option>
+                                    <option>OK - Oklahoma</option>
+                                    <option>OR - Oregon</option>
+                                    <option>PA - Pennsylvania</option>
+                                    <option>PR - Puerto Rico</option>
+                                    <option>RI - Rhode Island</option>
+                                    <option>SC - South Carolina</option>
+                                    <option>SD - South Dakota</option>
+                                    <option>TN - Tennessee</option>
+                                    <option>TX - Texas</option>
+                                    <option>UT - Utah</option>
+                                    <option>VA - Virginia</option>
+                                    <option>VI - Virgin Islands</option>
+                                    <option>VT - Vermont</option>
+                                    <option>WA - Washington</option>
+                                    <option>WI - Wisconsin</option>
+                                    <option>WV - West Virginia</option>
+                                    <option>WY - Wyoming</option>
+                                </select>
+                            </div><!-- .email -->
+                            <div class="email">
+                                <strong>Zip Code:</strong><sup class="surely">*</sup><br/>
+                                <input id="zip_shipping" type="email" name="" class="" value="" />
+                            </div><!-- .email -->
+                            <div class="email">
+                                <strong>Phone (xxx-xxx-xxxx):</strong><sup class="surely">*</sup><br/>
+                                <input id="phone_shipping" type="email" name="" class="" value="" />
+                            </div><!-- .email -->
+                            <div class="mynext">
+                                <input type="button" value="Next"/>
+                            </div>
+                            <div class="myprev">
+                                <input type="button" value="Previous"/>
+                            </div>
+                            <div class="clear"></div>
+                        </form>
+                        <div class="clear"></div>
+                    </div>
+                    </li>
+                    <li id="shipping_method">
+                    <div class="list_header">Shipping Method<div class="number">3</div></div>
+                    <div class="list_body">
+                        <form class="myform">
+                            <ul class="radio" style="margin: 0; padding: 0">
+                                <input type="radio" name="shipping_method" checked="checked">Standard Shipping<span> $5.00</input><br>
+                                <input type="radio" name="shipping_method">Two-day Shipping<span> $7.99</input><br>
+                                <input type="radio" name="shipping_method">Overnight Shipping<span> $14.99</input>
+                            </ul>
+                            <div class="mynext">
+                                <input type="button" value="Next"/>
+                            </div>
+                            <div class="myprev">
+                                <input type="button" value="Previous"/>
+                            </div>
+                            <div class="clear"></div>
+                        </form>
+                        <div class="clear"></div>
+                    </div>
+                    </li>
+                    <li id="payment_information">
+                    <div class="list_header">Payment Information<div class="number">4</div></div>
+                    <div class="list_body">
+                        <form class="myform">
+                            <div class="email">
+                                <strong>Payment Method:</strong><sup class="surely">*</sup><br/>
+                                <select>
+                                    <option>Master Card</option>
+                                    <option>American Express</option>
+                                    <option>Visa</option>
+                                    <option>Discover</option>
+                                </select>
+                            </div><!-- .email -->
+                            <br/>
+                            <div class="email">
+                                <strong>Card Number:</strong><sup class="surely">*</sup><br/>
+                                <input type="email" name="" class="" value="5555 5555 5555 5555" />
+                            </div>
+                            <div class="email">
+                                <strong>CVV:</strong><sup class="surely">*</sup><br/>
+                                <input type="email" name="" class="" value="" />
+                            </div>
+
+                            <div class="email">
+                                <strong>Expiration Date:</strong><sup class="surely">*</sup><br/>
+                                <select>
+                                    <option>01 - Janaury</option>
+                                    <option>02 - February</option>
+                                    <option>03 - March</option>
+                                    <option>04 - April</option>
+                                    <option>05 - May</option>
+                                    <option>06 - June</option>
+                                    <option>07 - July</option>
+                                    <option>08 - August</option>
+                                    <option>09 - September</option>
+                                    <option>10 - October</option>
+                                    <option>11 - November</option>
+                                    <option>12 - December</option>
+                                </select>
+                                &nbsp
+                                <select>
+                                    <option>2014</option>
+                                    <option>2015</option>
+                                    <option>2016</option>
+                                    <option>2017</option>
+                                    <option>2018</option>
+                                    <option>2019</option>
+                                    <option>2020</option>
+                                    <option>2021</option>
+                                    <option>2022</option>
+                                    <option>2023</option>
+                                    <option>2024</option>
+                                    <option>2025</option>
+                                    <option>2026</option>
+                                    <option>2027</option>
+                                    <option>2028</option>
+                                    <option>2029</option>
+                                    <option>2030</option>
+                                    <option>2031</option>
+                                    <option>2032</option>
+                                    <option>2033</option>
+                                    <option>2034</option>
+                                    <option>2035</option>
+                                    <option>2036</option>
+                                    <option>2037</option>
+                                    <option>2038</option>
+                                    <option>2039</option>
+                                    <option>2040</option>
+                                    <option>2041</option>
+                                    <option>2042</option>
+                                    <option>2043</option>
+                                    <option>2044</option>
+                                    <option>2045</option>
+                                    <option>2046</option>
+                                    <option>2047</option>
+                                    <option>2048</option>
+                                    <option>2049</option>
+                                    <option>2050</option>
+                                    <option>2051</option>
+                                    <option>2052</option>
+                                    <option>2053</option>
+                                    <option>2054</option>
+                                    <option>2055</option>
+                                    <option>2056</option>
+                                    <option>2057</option>
+                                    <option>2058</option>
+                                    <option>2059</option>
+                                    <option>2060</option>
+                                </select>
+                            </div>
+                            <div id="last_next" class="mynext">
+                                <input type="button" value="Next"/>
+                            </div>
+                            <div class="myprev">
+                                <input type="button" value="Previous"/>
+                            </div>
+                            <div class="clear"></div>
+
+                        </form>
+                        <div class="clear"></div>
+                    </div>
+                    </li>
+            </ul>
+        </div><!-- .grid_9 -->
+
+        <ul class="grid_11 checkout_list order_review" style="display: none">
+          <li class="active">
+          <div class="list_header">Order Review</div>
+          <div class="list_body">
+            <form action="confirm.html" class="registed" style="width: 100%; padding: 0; margin:0; border: none">
+              <table class="cart_product">
+                <tr>
+                  <th class="images"></th>
+                  <th class="bg name">Product Name</th>
+                  <th class="price">Unit Price</th>
+                  <th class="bg qty">Qty</th>
+                  <th class="subtotal">Subtotal</th>
+                </tr>
+                <tr>
+                  <td class="images"><a href="product_page.html"><img src="images/products/Allegra_S.jpg" alt="Product 6"></a></td>
+                  <td class="bg name">Allegra 12 Hour Allergy, Non-Drowsy 60mg Tablets,<br/> 24 Tablets</td>
+                  <td class="price">$5.99</td>
+                  <td class="bg qty"><input type="text" name="" value="" placeholder="1" /></td>
+                  <td class="subtotal">$5.99</td>
+                </tr>
+                <tr>
+                  <td class="images"><a href="product_page.html"><img src="images/products/SalineNasaMist_S.jpg" alt="Product Slide 1"></a></td>
+                  <td class="bg name">Ayr Saline Nasal Mist,<br/>1.69 fl oz (50ml)</td>
+                  <td class="price">$8.99</td>
+                  <td class="bg qty"><input type="text" name="" value="" placeholder="1" /></td>
+                  <td class="subtotal">$8.99</td>
+                </tr>
+              </table>
+              <div style="text-align:left">
+                <p><b>Billing Address:  </b><a id="edit_billing_address" href=""><span>[edit]</span></a></p>
+                <p>Name: Tom Hanks</p>
+                <p>Address: 5010 Morewood Avenue, Pittsburgh, PA, 15213</p>
+                <p>Phone: 412-555-5555</p>
+              </div>
+              <div style="text-align:left">
+                <p><b>Shipping Address:  </b><a id="edit_shipping_address" href=""><span>[edit]</span></a></p>
+                <p>Name: Tom Hanks</p>
+                <p>Address: 5010 Morewood Avenue, Pittsburgh, PA, 15213</p>
+                <p>Phone: 412-555-5555</p>
+                <p>Shipping Method: Standard</p>
+              </div>
+              <div style="text-align:left">
+                <p><b>Shipping Method:  </b><a id="edit_shipping_method" href=""><span>[edit]</span></a></p>
+                <p>Standard Shipping</p>
+              </div>
+              <div style="text-align:left">
+                <p><b>Payment Information:  </b><a id="edit_payment" href=""><span>[edit]</span></a></p>
+                <p>Payment Method: Visa</p>
+                <p>Card Number: **** **** **** 5555</p>
+                <p>CVV: 555</p>
+                <p>Expiration Date: 15/2035</p>
+              </div>
+              <div style="text-align: right">
+                <p><b>Subtotal: $14.98</b></p>
+                <p><b>Estimated Shipping: $5.00</b></p>
+                <p><b>Tax: $3.39</b></p>
+                <p><b>Total: $23.37</b></p>
+              </div>
+
+              <div class="submit" style="float: right">
+                <input type="submit" value="Submit Order" style="margin: 0"/>
+              </div>
+              <div class="clear"></div>
+            </form>
+            <div class="clear"></div>
+          </div>
+          <div class="clear"></div>
+          </li>
+        </ul>
+        <!--<div class="grid_3" id="sidebar_right">-->
+            <!--<aside id="checkout_progress">-->
+                <!--<h3>Your Checkout Progress</h3>-->
+                <!--<ul>-->
+                    <!--<li>Billing Address<a title="Edit" href="#">Edit</a></li>-->
+                    <!--<li>Shipping Address<a title="Edit" href="#">Edit</a></li>-->
+                    <!--<li>Shipping Method<a title="Edit" href="#">Edit</a></li>-->
+                    <!--<li>Payment Method<a title="Edit" href="#">Edit</a></li>-->
+                <!--</ul>-->
+            <!--</aside>-->
+        <!--</div>-->
+    </div>
+
+        <div class="clear"></div>
+    </div><!-- .container_12 -->
+</section><!-- #main -->
+
+<div class="clear"></div>
+
+
+    <footer>
+    <div class="f_navigation">
+        <div class="container_12">
+            <div class="grid_3">
+                <h3>Contact Us</h3>
+                <ul class="f_contact">
+                    <li>200 Lothrop St. Pittsburgh, PA 15213</li>
+                    <li>412-647-UPMC</li>
+                    <li>hospital@upmc.edu</li>
+                </ul>
+                <!-- .f_contact -->
+            </div>
+            <!-- .grid_3 -->
+
+            <div class="grid_3">
+                <h3>Information</h3>
+                <nav class="f_menu">
+                    <ul>
+                        <li><a href="404.html">About Us</a></li>
+              <li><a href="404.html">Privacy Policy</a></li>
+              <li><a href="404.html">Terms & Conditions</a></li>
+              <li><a href="404.html">Secure Payment</a></li>
+            </ul>
+          </nav><!-- .private -->
+        </div><!-- .grid_3 -->
+
+        <div class="grid_3">
+          <h3>Customer Service</h3>
+          <nav class="f_menu">
+            <ul>
+              <li><a href="contact_us.html">Contact Us</a></li>
+              <li><a href="404.html">Return</a></li>
+              <li><a href="404.html">FAQ</a></li>
+              <li><a href="404.html">Site Map</a></li>
+            </ul>
+          </nav><!-- .private -->
+        </div><!-- .grid_3 -->
+
+        <div class="grid_3">
+          <h3>My Account</h3>
+          <nav class="f_menu">
+            <ul>
+              <li><a href="404.html">My Account</a></li>
+              <li><a href="404.html">Order History</a></li>
+              <li><a href="404.html">Wish List</a></li>
+              <li><a href="404.html">Newsletter</a></li>
+                    </ul>
+                </nav>
+                <!-- .private -->
+            </div>
+            <!-- .grid_3 -->
+
+            <div class="clear"></div>
+        </div>
+        <!-- .container_12 -->
+    </div>
+    <!-- .f_navigation -->
+
+    <div class="f_info">
+        <div class="container_12">
+            <div class="grid_6">
+                <p class="copyright">Copyright &copy; 2015. Simplex LLP All rights reserved.</p>
+            </div>
+            <!-- .grid_6 -->
+
+            <div class="grid_6">
+                <div class="soc">
+                    <a class="google" href="https://plus.google.com/"></a>
+                    <a class="twitter" href="https://twitter.com"></a>
+                    <a class="facebook" href="https://www.facebook.com/"></a>
+                </div>
+                <!-- .soc -->
+            </div>
+            <!-- .grid_6 -->
+
+            <div class="clear"></div>
+        </div>
+        <!-- .container_12 -->
+    </div>
+    <!-- .f_info -->
+</footer>
+
+
+  </body>
+
+</html>

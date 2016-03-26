@@ -1,0 +1,726 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  
+  <title>UPMC Pharmacy</title>
+  
+  <link rel="shortcut icon" href="images/favicon.ico">
+  <link href="css/style.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/grid.css" media="screen" rel="stylesheet" type="text/css">
+  <link href="css/jquery.jqzoom.css" rel="stylesheet" type="text/css">
+  
+  <script src="js/jquery-1.11.3.js"></script>
+  <script src="js/html5.js"></script>
+  <script src="js/jflow.plus.js"></script>
+  <script src="js/selectBox.js"></script>
+  <!-- <script src="js/jquery.jqzoom-core.js" ></script> -->
+  <script src="js/login.js"></script>
+  
+  
+  
+  
+  
+   <link href="css/product_page.css" media="screen" rel="stylesheet" type="text/css">
+  
+  
+  
+  <script>
+    $(document).ready(function () {
+      $("#myController").jFlow({
+        controller: ".control", // must be class, use . sign
+        slideWrapper: "#jFlowSlider", // must be id, use # sign
+        slides: "#slider",  // the div where all your sliding divs are nested in
+        selectedWrapper: "jFlowSelected",  // just pure text, no sign
+        height: 300,  // this is the height for the content-slider
+        duration: 400,  // time in miliseconds to transition one slide
+        prev: ".slidprev", // must be class, use . sign
+        next: ".slidnext", // must be class, use . sign
+        auto: true
+        });
+    });
+  </script>
+  
+  <script>
+    $(document).ready(function () {
+      $("button").click(function () {
+        $(this).addClass('click')
+      });
+    });
+  </script>
+
+</head>
+
+
+  <body>
+
+    <!-- header area -->
+<div class="container_12">
+    <div id="top relative_container">
+        <div class="grid_3">
+            <div class="phone_top">
+                Call Us 412-647-UPMC
+            </div>
+            <!-- .phone_top -->
+        </div>
+        <!-- .grid_3 -->
+
+        <div class="grid_9 welcome">
+            <p>Welcome, guest! You can <a href="login.html">login</a> or <a href="login.html">create an account</a>.</p>
+            <p>Hello, Tom! Welcome to the UPMC online pharmacy!</p>
+        </div>
+
+    </div>
+    <!-- #top -->
+
+    <div class="clear"></div>
+
+    <header id="branding">
+        <div class="grid_3">
+            <hgroup>
+                <h1 id="site_logo"><a href="index.html" title="">
+                    <img src="images/logo.png" alt="Online Pharmacy Logo"/></a></h1>
+            </hgroup>
+        </div>
+        <!-- .grid_3 -->
+
+        <div class="account_info">
+            <div class="grid_6">
+                <ul id="cart_nav">
+                    <li>
+                        <a class="cart_li" href="shopping_cart.html"><span>Cart</span></a>
+                        <ul class="cart_cont">
+                            <li>
+                                <a href="product_page1.html" class="prev_cart">
+                                    <div class="cart_vert"><img src="images/products/product1.jpg" alt="" title=""/></div>
+                                </a>
+
+                               <div class="cont_cart">
+                                    <h4>Allegra 12 Hour Allergy, Non-Drowsy 60mg Tablets</h4>
+
+                                    <div class="price">1 x $5.99</div>
+                                </div>
+                                <a title="close" class="close" href="#"></a>
+
+                                <div class="clear"></div>
+                            </li>
+
+                            <li>
+                                <a href="product_page2.html" class="prev_cart">
+                                    <div class="cart_vert"><img src="images/products/product2.jpg" alt="" title=""/></div>
+                                </a>
+
+                                
+                                 <div class="cont_cart">
+                                    <h4>Ayr Saline Nasal Mist, 50ml</h4>
+
+                                    <div class="price">1 x $8.99</div>
+                                </div>
+                                <a title="close" class="close" href="#"></a>
+
+                                <div class="clear"></div>
+                            </li>
+                            <li class="no_border">
+                                <a href="shopping_cart.html" class="view_cart">View Shopping Cart</a>
+                                <a href="checkout.html" class="checkout">Proceed to Checkout</a>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <nav class="private">
+                    <ul>
+                        <li><a href="404.html">My Account</a></li>
+                        <li class="separator">|</li>
+                        <li><a href="404.html">My Wishlist</a></li>
+                        <li class="separator">|</li>
+                        <li><a href="login.html">Log In</a></li>
+                        <li class="separator">|</li>
+                        <li><a href="login.html">Sign Up</a></li>
+                        <li class="separator">|</li>
+                        <li id='logout'><span>Log Out</span></li>
+                    </ul>
+                </nav>
+                <!-- .private -->
+            </div>
+        </div>
+        <!-- .grid_6 -->
+    </header>
+    <!-- #branding -->
+</div>
+<!-- .container_12 -->
+
+<div class="clear"></div>
+
+<!-- navigation bar -->
+<div id="block_nav_primary">
+    <div class="container_12">
+        <div class="grid_12 relative_container">
+            <nav class="primary">
+                <ul>
+                    <li class="curent"><a href="index.html">Shop</a></li>
+                    <li><a href="404.html">Prescription</a></li>
+                    <li><a href="404.html">MyUPMC</a></li>
+                    <li><a href="404.html">About Us</a></li>
+                    <li><a href="404.html">Help Center</a></li>
+                </ul>
+            </nav>
+
+            <div class="grid_3">
+                <form class="search" action="searchresult_grid.html">
+                  <input type="text" name="search" class="entry_form" value="" placeholder="Search here..."/>
+                  <input type="image"class="search_button" src="images/bg_search.png" />
+                </form>
+            </div>
+            <!-- .primary -->
+        </div>
+        <!-- .grid_12 -->
+    </div>
+    <!-- .container_12 -->
+</div>
+<!-- .block_nav_primary -->
+
+<div class="clear"></div>
+
+
+      <div class="clear"></div>
+
+  <div class="container_12">
+    <div class="grid_12">
+        <div class="breadcrumbs">
+            <a href="index.html">Shop</a>
+            
+            <span>&#8250;</span>
+            <span class="current">Health & Medicine</span>
+        </div><!-- .breadcrumbs -->
+    </div><!-- .grid_12 -->
+  </div><!-- .container_12 -->
+
+  <div class="clear"></div>
+
+  <section id="main">
+    <div class="container_12">
+       <div id="sidebar" class="grid_3">
+        <aside id="categories_nav">
+         <h3>Health & Medicine</h3>
+
+              <nav class="left_menu">
+                  <ul>
+                      <li><a href="#">Pain & Fever <span>(21)</span></a></li>
+                      <li><a href="#">Cough, Cold & Flu <span> (27)</span></a></li>
+                      <li><a href="#">Allergie <span>(33)</span></a></li>
+                      <li class="last"><a href="#">Digestive Healt <span>(17)</span></a></li>
+                  </ul>
+              </nav><!-- .left_menu -->
+        </aside><!-- #categories_nav -->
+
+        <aside id="shop_by">
+         <h3>Shop By</h3>
+
+         <div class="currently_shopping">
+          <p>Currently Shopping by:</p>
+          <ul>
+           <li><a title="close" class="close" href="#"></a>Price: <span>$0.00 - $999.99</span></li>
+           <li><a title="close" class="close" href="#"></a>Manufacturer: <span>Bayer</span></li>
+          </ul>
+
+          <a class="clear_all" href="#">Clear All</a>
+
+          <div class="clear"></div>
+         </div><!-- .currently_shopping -->
+
+         <h4>Category</h4>
+
+         <form action="#" class="check_opt">
+          <p><input class="niceCheck" type="checkbox" >For Adults (23)</p>
+          <p><input class="niceCheck" type="checkbox" name="" value="">For Children (27)</p>
+          <p><input class="niceCheck" type="checkbox" name="" value="">For Preganents (9)</p>
+         </form>
+
+         <h4>Price</h4>
+
+         <form action="#" class="check_opt">
+          <p><input class="niceCheck" type="checkbox" name="" value="">0.00 - $49.99 (21)</p>
+          <p><input class="niceCheck" type="checkbox" name="" value="">$50.00 - $99.99 (7)</p>
+          <p><input class="niceCheck" type="checkbox" name="" value="">0$100.00 and above (15)</p>
+         </form>
+        </aside><!-- #shop_by -->
+
+        <aside id="specials" class="specials">
+         <h3>On Sale</h3>
+
+         <ul>
+          <li>
+           <div class="prev">
+            <a href="product_page1.html"><img src="images/products/product10.jpg" alt="" title="" /></a>
+           </div>
+
+           <div class="cont">
+            <a href="product_page1.html">Rohto Cooling Eye Dropgs</a>
+            <div class="prise"><span class="old">$12.00</span>$10.00</div>
+           </div>
+          </li>
+
+          <li>
+           <div class="prev">
+            <a href="product_page1.html"><img src="images/products/product4.jpg" alt="" title="" /></a>
+           </div>
+
+           <div class="cont">
+            <a href="product_page1.html">Chlor-Trimeton Allergy Relief</a>
+            <div class="prise"><span class="old">$5.20</span>$3.40</div>
+           </div>
+          </li>
+         </ul>
+        </aside><!-- #specials -->
+
+       </div><!-- .sidebar -->
+
+       <div id="content" class="grid_9">
+        <h1 class="page_title">Product List</h1>
+
+        <div class="options">
+         <div class="grid-list">
+         <a class="grid" href="catalog_grid.html"><span>img</span></a>
+         <a class="list curent" href="catalog_list.html"><span>img</span></a>
+         </div><!-- .grid-list -->
+
+         <div class="show">
+          Show
+          <select>
+           <option>20</option>
+           <option>50</option>
+           <option>100</option>
+         </select>
+
+          per page
+         </div><!-- .show -->
+
+         <div class="sort">
+         Sort By
+          <select>
+           <option>Relevance</option>
+           <option>Price: Low to High</option>
+           <option>Price: High to Low</option>
+           <option>Avg. Customer Review</option>
+           <option>Best Seller</option>
+           </select>
+
+          <a class="sort_up" href="#"></a>
+         </div><!-- .sort -->
+        </div><!-- .options -->
+
+        <div class="listing_product">
+      <div class="product_li">
+        <div class="grid_3">
+          <img class="sale" src="images/new.png" alt="New"/>
+          <div class="prev">
+            <a href="product_page1.html"><img src="images/products/product1.jpg" alt="" title="" /></a>
+          </div><!-- .prev -->
+        </div><!-- .grid_3 -->
+
+        <div class="grid_4">
+          <div class="entry_content">
+            <a href="product_page1.html"><h3 class="title">Allegra 12 Hour Allergy, 60mg Tablets</h3></a>
+            <div class="review">
+              <a class="plus" href="#"></a>
+              <a class="plus" href="#"></a>
+              <a class="plus" href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <span>1 REVIEW(S)</span>
+            </div>
+            <p>Temporarily relieves these symptoms due to hay fever or other upper respiratory allergies:
+            <br>(1) runny nose
+            <br>(2) sneezing
+            <br>(3) itchy, watery eyes</p>
+            <a class="more" href="product_page1.html">Learn More</a>
+          </div><!-- .entry_content -->
+        </div><!-- .grid_4 -->
+
+        <div class="grid_2">
+          <div class="cart">
+            <div class="price">
+          
+             <div class="price_new">$5.99</div>
+             <div class="price_old">$10.00</div>
+            </div>
+        
+            <div id="cart_in_list">
+                
+              <div class="obn_like">
+              <span> Add to Cart </span> 
+              <a href="shopping_cart.html" class="bay"></a>
+              </div>
+              
+              <div class="obn_like">
+              <span>Add to Wishlist</span>
+              <a href="#" class="like"></a>
+              </div>
+                
+            </div>
+            
+          </div><!-- .cart -->
+        </div><!-- .grid_2 -->
+
+        <div class="clear"></div>
+      </div><!-- .article -->
+
+      <div class="product_li">
+        <div class="grid_3">
+          <img class="sale" src="images/sale.png" alt="Sale"/>
+          <div class="prev">
+            <a href="product_page1.html"><img src="images/products/product2.jpg" alt="" title="" /></a>
+          </div><!-- .prev -->
+        </div><!-- .grid_3 -->
+
+        <div class="grid_4">
+          <div class="entry_content">
+            <a href="product_page1.html"><h3 class="title">Ayr Saline Nasal Mist</h3></a>
+            <div class="review">
+              <a class="plus" href="#"></a>
+              <a class="plus" href="#"></a>
+              <a class="plus" href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <span>1 REVIEW(S)</span>
+            </div>
+            <p>Helps moisturize dry nasal passages and relieve dry, crusty and inflamed nasal membranes due to allergies and colds, and is an effective nasal wash for sinuses.</p>
+            <a class="more" href="product_page1.html">Learn More</a>
+          </div><!-- .entry_content -->
+        </div><!-- .grid_4 -->
+
+        <div class="grid_2">
+          <div class="cart">
+            <div class="price">
+              <div class="price_new">$8.99</div>
+              <div class="price_old">$11.00</div>
+            </div> 
+            <div id="cart_in_list">
+                
+              <div class="obn_like">
+              <span> Add to Cart </span> 
+              <a href="shopping_cart.html" class="bay"></a>
+              </div>
+              
+              <div class="obn_like">
+              <span>Add to Wishlist</span>
+              <a href="#" class="like"></a>
+              </div>
+                
+            </div>
+          </div><!-- .cart -->
+        </div><!-- .grid_2 -->
+
+        <div class="clear"></div>
+      </div><!-- .article -->
+
+      <div class="product_li">
+        <div class="grid_3">
+          <img class="sale" src="images/top.png" alt="Top"/>
+          <div class="prev">
+            <a href="product_page1.html"><img src="images/products/product3.jpg" alt="" title="" /></a>
+          </div><!-- .prev -->
+        </div><!-- .grid_3 -->
+
+        <div class="grid_4">
+          <div class="entry_content">
+            <a href="product_page1.html"><h3 class="title">BD Alcohol Swabs</h3></a>
+            <div class="review">
+              <a class="plus" href="#"></a>
+              <a class="plus" href="#"></a>
+              <a class="plus" href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <span>1 REVIEW(S)</span>
+            </div>
+            <p>For the preparation of skin prior to an injection to decrease germs in minor cuts and scrapes. Antiseptic for preparation of the skin prior to injection: 70% isopropyl alcohol for optimum anti-bacterial action.</p>
+            <a class="more" href="product_page1.html">Learn More</a>
+          </div><!-- .entry_content -->
+        </div><!-- .grid_4 -->
+
+        <div class="grid_2">
+          <div class="cart">
+            <div class="price">
+              <div class="price_new">$7.00</div>
+            </div>
+            <div id="cart_in_list">
+                
+              <div class="obn_like">
+              <span> Add to Cart </span> 
+              <a href="shopping_cart.html" class="bay"></a>
+              </div>
+              
+              <div class="obn_like">
+              <span>Add to Wishlist</span>
+              <a href="#" class="like"></a>
+              </div>
+                
+            </div>
+          </div><!-- .cart -->
+        </div><!-- .grid_2 -->
+
+        <div class="clear"></div>
+      </div><!-- .article -->
+
+      <div class="product_li">
+        <div class="grid_3">
+          <div class="prev">
+            <a href="product_page1.html"><img src="images/products/product4.jpg" alt="" title="" /></a>
+          </div><!-- .prev -->
+        </div><!-- .grid_3 -->
+
+        <div class="grid_4">
+          <div class="entry_content">
+            <a href="product_page1.html"><h3 class="title">Chlor-Trimeton Allergy Relief</h3></a>
+            <div class="review">
+              <a class="plus" href="#"></a>
+              <a class="plus" href="#"></a>
+              <a class="plus" href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <span>1 REVIEW(S)</span>
+            </div>
+            <p>Relieving symptoms of sinus congestion, sinus pressure, runny nose, watery eyes, itching of the nose and throat, and sneezing due to upper respiratory infections (eg, colds), allergies, and hay fever. It may also be used for other conditions as determined by your doctor. </p>
+            <a class="more" href="product_page1.html">Learn More</a>
+          </div><!-- .entry_content -->
+        </div><!-- .grid_4 -->
+
+        <div class="grid_2">
+          <div class="cart">
+            <div class="price">
+              <div class="price_new">$3.40</div>
+              <div class="price_old">$5.20</div>
+            </div>
+            <div id="cart_in_list">
+                
+              <div class="obn_like">
+              <span> Add to Cart </span> 
+              <a href="shopping_cart.html" class="bay"></a>
+              </div>
+              
+              <div class="obn_like">
+              <span>Add to Wishlist</span>
+              <a href="#" class="like"></a>
+              </div>
+                
+            </div>
+          </div><!-- .cart -->
+        </div><!-- .grid_2 -->
+
+        <div class="clear"></div>
+      </div><!-- .article -->
+
+      <div class="product_li">
+        <div class="grid_3">
+          <img class="sale" src="images/new.png" alt="New"/>
+          <div class="prev">
+            <a href="product_page1.html"><img src="images/products/product6.jpg" alt="" title="" /></a>
+          </div><!-- .prev -->
+        </div><!-- .grid_3 -->
+
+        <div class="grid_4">
+          <div class="entry_content">
+            <a href="product_page1.html"><h3 class="title">Luden's Throat Drops, Sugar Free, Cherry</h3></a>
+            <div class="review">
+              <a class="plus" href="#"></a>
+              <a class="plus" href="#"></a>
+              <a class="plus" href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <span>1 REVIEW(S)</span>
+            </div>
+            <p><br>(1) Relieves sore mouth and sore throat<br>(2) Soothes your throat<br>(3) Great tasting</p>
+            <a class="more" href="product_page1.html">Learn More</a>
+          </div><!-- .entry_content -->
+        </div><!-- .grid_4 -->
+
+        <div class="grid_2">
+          <div class="cart">
+            <div class="price">
+              <div class="price_new">$4.78</div>
+              <div class="price_old">$9.99</div>
+            </div>
+            <div id="cart_in_list">
+                
+              <div class="obn_like">
+              <span> Add to Cart </span> 
+              <a href="shopping_cart.html" class="bay"></a>
+              </div>
+              
+              <div class="obn_like">
+              <span>Add to Wishlist</span>
+              <a href="#" class="like"></a>
+              </div>
+                
+            </div>
+          </div><!-- .cart -->
+        </div><!-- .grid_2 -->
+
+        <div class="clear"></div>
+      </div><!-- .article -->
+
+      <div class="product_li">
+        <div class="grid_3">
+          <div class="prev">
+            <a href="product_page1.html"><img src="images/products/product7.jpg" alt="" title="" /></a>
+          </div><!-- .prev -->
+        </div><!-- .grid_3 -->
+
+        <div class="grid_4">
+          <div class="entry_content">
+            <a href="product_page1.html"><h3 class="title">Natrol Melatonin, 5mg, Fast Dissolve</h3></a>
+            <div class="review">
+              <a class="plus" href="#"></a>
+              <a class="plus" href="#"></a>
+              <a class="plus" href="#"></a>
+              <a href="#"></a>
+              <a href="#"></a>
+              <span>1 REVIEW(S)</span>
+            </div>
+            <p>A natural substance found in the body, melatonin helps establish normal sleep patterns to promote a more restful, relaxing sleep and better overall health.</p>
+            <a class="more" href="product_page1.html">Learn More</a>
+          </div><!-- .entry_content -->
+        </div><!-- .grid_4 -->
+
+        <div class="grid_2">
+          <div class="cart">
+            <div class="price">
+              <div class="price_new">$8.23</div>
+              <div class="price_old">$12.43</div>
+            </div>
+            <div id="cart_in_list">
+                
+              <div class="obn_like">
+              <span> Add to Cart </span> 
+              <a href="shopping_cart.html" class="bay"></a>
+              </div>
+              
+              <div class="obn_like">
+              <span>Add to Wishlist</span>
+              <a href="#" class="like"></a>
+              </div>
+                
+            </div>
+          </div><!-- .cart -->
+        </div><!-- .grid_2 -->
+
+        <div class="clear"></div>
+      </div><!-- .article -->
+
+        <div class="clear"></div>
+        </div><!-- .listing_product -->
+
+        <div class="clear"></div>
+
+        <div class="pagination">
+         <ul>
+          <li class="prev"><span>&#8592;</span></li>
+          <li class="curent"><a href="#">1</a></li>
+          <li><a href="#">2</a></li>
+          <li><a href="#">3</a></li>
+          <li><a href="#">4</a></li>
+          <li><a href="#">5</a></li>
+          <li><span>...</span></li>
+          <li><a href="#">9</a></li>
+          <li class="next"><a href="#">&#8594;</a></li>
+         </ul>
+        </div><!-- .pagination -->
+        <p class="pagination_info">Displaying 1 to 6 (of 100 products)</p>
+       </div><!-- #content -->
+
+      <div class="clear"></div>
+
+    </div><!-- .container_12 -->
+  </section><!-- #main -->
+
+  <div class="clear"></div>
+
+
+    <footer>
+    <div class="f_navigation">
+        <div class="container_12">
+            <div class="grid_3">
+                <h3>Contact Us</h3>
+                <ul class="f_contact">
+                    <li>200 Lothrop St. Pittsburgh, PA 15213</li>
+                    <li>412-647-UPMC</li>
+                    <li>hospital@upmc.edu</li>
+                </ul>
+                <!-- .f_contact -->
+            </div>
+            <!-- .grid_3 -->
+
+            <div class="grid_3">
+                <h3>Information</h3>
+                <nav class="f_menu">
+                    <ul>
+                        <li><a href="404.html">About Us</a></li>
+              <li><a href="404.html">Privacy Policy</a></li>
+              <li><a href="404.html">Terms & Conditions</a></li>
+              <li><a href="404.html">Secure Payment</a></li>
+            </ul>
+          </nav><!-- .private -->
+        </div><!-- .grid_3 -->
+
+        <div class="grid_3">
+          <h3>Customer Service</h3>
+          <nav class="f_menu">
+            <ul>
+              <li><a href="contact_us.html">Contact Us</a></li>
+              <li><a href="404.html">Return</a></li>
+              <li><a href="404.html">FAQ</a></li>
+              <li><a href="404.html">Site Map</a></li>
+            </ul>
+          </nav><!-- .private -->
+        </div><!-- .grid_3 -->
+
+        <div class="grid_3">
+          <h3>My Account</h3>
+          <nav class="f_menu">
+            <ul>
+              <li><a href="404.html">My Account</a></li>
+              <li><a href="404.html">Order History</a></li>
+              <li><a href="404.html">Wish List</a></li>
+              <li><a href="404.html">Newsletter</a></li>
+                    </ul>
+                </nav>
+                <!-- .private -->
+            </div>
+            <!-- .grid_3 -->
+
+            <div class="clear"></div>
+        </div>
+        <!-- .container_12 -->
+    </div>
+    <!-- .f_navigation -->
+
+    <div class="f_info">
+        <div class="container_12">
+            <div class="grid_6">
+                <p class="copyright">Copyright &copy; 2015. Simplex LLP All rights reserved.</p>
+            </div>
+            <!-- .grid_6 -->
+
+            <div class="grid_6">
+                <div class="soc">
+                    <a class="google" href="https://plus.google.com/"></a>
+                    <a class="twitter" href="https://twitter.com"></a>
+                    <a class="facebook" href="https://www.facebook.com/"></a>
+                </div>
+                <!-- .soc -->
+            </div>
+            <!-- .grid_6 -->
+
+            <div class="clear"></div>
+        </div>
+        <!-- .container_12 -->
+    </div>
+    <!-- .f_info -->
+</footer>
+
+
+  </body>
+
+</html>
